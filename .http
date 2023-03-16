@@ -1,0 +1,12 @@
+GET http://localhost:4300/api
+User-Agent: vscode-restclient
+
+######
+
+POST http://127.0.0.1:5000/teste2
+User-Agent: vscode-restclient
+Content-Type: application/json
+
+{
+    "Jose": "MAU"
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/libs/bootstrap-5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>App</title>
+</head>
+<body>
+   <div class="content">
+    <div class="menu">
+        <img src="/assets/img/logo.png" width="160px" height="110px">
+    </div>
+    <div class="row room-content">
+        <h3 class="alet m-4">Salas atuais</h3>
+        <h5 id="anyRoom">Nenhuma Reunião</h5>
+        <ul id="rooms">
+            
+        </ul>
+        <div class="form-group row">
+            <label for="room">Digite o numero da reuniao para se juntar</label>
+            <input type="text" class="form-control" id="txtRoom">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-primary m-4" id="create">Nova Reunião</button>
+            <button class="btn btn-primary m-4" id="join">Juntar-se a Sala</button>
+        </div>
+       
+    </div>
+    <div class="footer">&copy; 2020 - 26460 | José Eduardo Chico#CJ Programmer</div>
+   </div>
+</body>
+</html>
+
+
+<script src="/libs/jquery-3.6.1/jquery-3.6.1.min.js" defer></script>
+<script src="/libs/socket.io.js" defer></script>
+
+<script src="/js/app.js" defer></script>

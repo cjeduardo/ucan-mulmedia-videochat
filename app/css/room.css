@@ -1,0 +1,133 @@
+:root{
+    --radius-10: 10px;
+    --primary: #062939;
+    --primary2: #03a9f4;
+    --primary2-hover: #0681ba;
+    --primary-back: #062939c0;
+    --primary2-back: #03a8f4c0;
+}
+
+/* body{
+    background-color: #ced6dd90 !important;
+} */
+html{
+    height: 100%;
+}
+body{
+    /* border: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, #03a8f44a, #06293936 ),
+                url(../assets/imgs/back4.webp);
+    /* background: linear-gradient(90deg, var(--primary2-back), var(--primary-back)),
+                url(../assets/imgs/back1.jpg); */
+    background-size: cover;
+    height: 100%;
+}
+
+/* Menu */
+.menu-lat{
+    background-color: #ced6dd;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu li, .menu a{
+    color: var(--primary)
+}
+
+.menu li:hover, .menu li:hover a{
+    color: var(--primary2);
+}
+
+.menu li a{
+    text-decoration: none;
+    padding: 4px 15px;
+    padding-top: 0;
+    margin-inline-end: 5px;    
+}
+
+.menu li span{
+    padding-top: 8px;
+}
+
+/* Layouts Videos */
+.main{
+    /* background-color: #ced6dd; */
+}
+
+.div-video{
+    /* background-color: #062939; */
+    display: flex;
+
+    /* max-height: 400px; */
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+#room-id{
+    color: #03a9f4;
+}
+
+.div-btns button{
+    margin-left: 16px;
+    background-color: #03a8f44b;
+    color: white;
+    border-radius: 50px;
+}
+
+.div-btns button:hover{
+    background-color: #0681ba;
+    color: white;
+}
+
+.div-btns{
+    
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    z-index: 10;
+    bottom: 20px;
+    width: 100%;
+    
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-item{
+    margin: 8px;
+    border-radius: 10px;
+    padding: 2px;
+    background-color: #150505;
+}
+
+.btn-end-call{
+    background-color: #ff0000c2 !important;
+    opacity: 0.7;
+    padding: 8px 12spx !important;
+}
+
+.btn-end-call i{
+    margin-top: 6px;
+}
+
+.btn-end-call:hover{
+    opacity: 1;
+}
+
+video{
+    max-width: 500px;
+    max-height: 500px;
+}

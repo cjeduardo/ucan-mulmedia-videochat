@@ -1,0 +1,108 @@
+:root{
+    --radius-10: 10px;
+    --primary: #062939;
+    --primary2: #03a9f4;
+    --primary2-hover: #0681ba;
+    --primary-back: #062939c0;
+    --primary2-back: #03a8f4c0;
+}
+
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    /* overflow-x: hidden; */
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.mysms{
+    position: relative;
+    right: 0;
+    background-color: aqua;
+    width: 180px;
+    min-height: 20px;
+    margin: 2px;
+
+    border-radius: 10px;
+
+    align-self: flex-end;
+    padding: 10px;
+}
+
+.othersms{
+    position: relative;
+    right: 0;
+    background-color: #00ffffac;
+    width: 180px;
+    min-height: 20px;
+    margin: 2px;
+
+    border-radius: 10px;
+
+    align-self: flex-start;
+    padding: 10px;
+}
+
+.chat{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sender{
+
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.message .messages{
+    flex-grow: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    overflow-y: scroll;
+    height: calc( 100vh - 430px );
+}
+
+.message .sender{
+    flex-grow: 0;
+    background-color: #ffffff;
+}
+
+.box-user {
+    padding: 2px; 
+    margin-block: 12px; 
+    font-size: 18px; 
+    background-color: var(--primary2); 
+    border-radius: 8px;
+}
+
+.me-box{
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+
+.me-box .btn{
+    color: white;
+}
+
+.box-user:hover{
+    background-color: var(--primary2-back); 
+}

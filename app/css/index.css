@@ -1,0 +1,127 @@
+/* Variables */
+
+:root{
+    --radius-10: 10px;
+    --primary: #062939;
+    --primary2: #03a9f4;
+    --primary2-hover: #0681ba;
+    --primary-back: #062939c0;
+    --primary2-back: #03a8f4c0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, #03a8f44a, #06293936 ),
+                url(../assets/imgs/back4.webp);
+    background-size: cover;
+}
+
+.content{
+    height: 100%;
+}
+
+/* ============== Home Page =============== */
+.main{
+    color: #ced6dd;
+}
+
+.footer{
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    width: 1300px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-hover);
+    width: 100%;
+    margin-top: -160px;
+    height: 100%;
+    padding: 20px;
+}
+
+.div-main-rigth{
+    border-radius: 1em;
+    background-color: var(--primary);
+    opacity: 0.8;
+    width: 100%;
+    height: 80%;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+}
+
+.div-main-rigth .option{
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.div-main-left .option{
+    height: 100%;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.div-main-rigth .option p{
+    padding: 0;
+    margin: 0;
+    margin-top: 4px;
+}
+
+.div-main-rigth .option div{
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    /* flex-direction: column;
+    justify-content: center; */
+}
+
+.div-main-rigth button{
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    font-size: 18px;
+    margin: 10px;
+    background-color: var(--primary);
+    border: 1px solid var(--primary2);
+    color: var(--primary2);
+    transition: 500ms ease;
+
+}
+
+.div-main-rigth button:hover{
+    background-color: var(--primary2-hover);
+    color: var(--primary);
+}
+/* Layouts */
+
+
+/* Typography */
+#htime {
+    font-size: 94px;
+}
+
+#hdate {
+    font-size: 32px;
+}

@@ -1,0 +1,36 @@
+/* Variables */
+
+:root{
+    --radius-10: 10px;
+    --primary: #062939;
+    --primary2: #03a9f4;
+    --primary2-hover: #0681ba;
+    --primary-back: #062939c0;
+    --primary2-back: #03a8f4c0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    /* border: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, #03a8f44a, #06293936 ),
+                url(../assets/imgs/back4.webp);
+    /* background: linear-gradient(90deg, var(--primary2-back), var(--primary-back)),
+                url(../assets/imgs/back1.jpg); */
+    background-size: cover;
+}
+
+/* ============== Home Page =============== */
+.main{
+    /* align-self: stretch;
+    justify-self: stretch; */
+    /* flex-grow: 1; *//* Faz a div crescer e ocupar o restante do espaço!*/
+    color: #ced6dd;
+}
+/* Layouts */
+
+
+/* Typography */

@@ -1,0 +1,127 @@
+/* Variables */
+
+:root{
+    --radius-10: 10px;
+    --primary: #062939;
+    --primary2: #03a9f4;
+    --primary2-hover: #0681ba;
+    --primary-back: #062939c0;
+    --primary2-back: #03a8f4c0;
+}
+
+/* Layouts */
+html, body{
+    height: 100%;
+}
+
+#login-error{
+    display: none;
+    width: 99%;
+    /* color: #ee4b60;  */
+    border: none;
+    margin-block: 10px;
+    padding: 5px !important;
+}
+
+
+#loading{
+    display: none;
+    color: var(--primary2);
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, var(--primary2-back), var(--primary-back)),
+                url(../assets/imgs/back4.webp);
+    background-size: cover;
+}
+
+.content{
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+
+    margin: auto;
+}
+
+.content{
+    display: flex;
+    height: 100%;
+}
+
+.login-div{
+    display: flex;
+    flex-direction: column  ;
+    padding: 30px 40px;
+    /* padding-top: 0; */
+    border-radius: 1em 1em 1em 1em;
+    background-color: var(--primary-back);
+    width: 400px;
+    max-width: 500px !important;
+}
+
+.login-div .div-img{
+    align-self: center;
+}
+
+.login-div{
+    color: white;
+}
+
+.login-div button{
+    background-color: var(--primary2);
+    border-color: var(--primary2-hover) !important;
+}
+
+.login-div button:hover{
+    background-color: var(--primary2-hover);
+}
+
+.login-div button:focus{
+    background-color: var(--primary2-hover);
+    color: white;
+    
+}
+
+.footer{
+    padding: 0; 
+    margin: 0; color: #f0f8ffac; 
+    text-align: center; 
+    position: absolute; bottom: 40px;
+}
+
+/* Layout-Responsivity */
+@media (max-width: 767px) {
+    .login-div{
+        border-radius: 0;
+        height: 100%;
+        padding-inline: 20% !important;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: none !important;
+    }
+
+    .login-div img{
+        position: relative;
+        top: -150px;
+        margin-bottom: -180px;
+        width: 200px;
+    }
+
+    .footer{
+        font-size: small;
+    }
+}
+
+/* Typography */
+
+.login-div h3{
+    font-size: 38px;
+}
